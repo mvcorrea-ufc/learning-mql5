@@ -1,6 +1,12 @@
 // tradeAssist:  helper for manual trade
 
-int OnInit(){ return(INIT_SUCCEEDED); }
+#include ".\tradeAssist\baseClass.mqh"
+
+int OnInit(){ 
+  TAssist ta();
+  Print("onInit finished");
+  return(INIT_SUCCEEDED); 
+}
 
 void OnDeinit(const int reason){ }
 
